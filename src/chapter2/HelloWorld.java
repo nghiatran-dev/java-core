@@ -1,16 +1,21 @@
 package chapter2;
 
+import java.util.Scanner;
+
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-		String myName = "Victor";
-		String myJob = "Developer";
-		String myAge = "33A";
-		int[] scores = { 90, 85, 80 };
-		System.out.println("My name: " + myName);
-		System.out.println("My job: " + myJob);
-		System.out.println("My age: " + Integer.valueOf(myAge));
-		System.out.println("My scores: " + scores[0] + ", " + scores[1] + ", " + scores[2]);
+		System.out.println("Please input your info!");
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter your name: ");
+		String name = scanner.nextLine();
+
+		System.out.print("Enter your age: ");
+		int age = scanner.nextInt();
+
+		System.out.println("Thanks! Welcome...");
+		System.out.println("- Mr/Ms: " + name);
+		System.out.println("- Age: " + age + " years old");
 	}
 
 }
