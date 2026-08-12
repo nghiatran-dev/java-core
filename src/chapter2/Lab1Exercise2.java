@@ -11,6 +11,7 @@ public class Lab1Exercise2 {
         float side1 = scanner.nextFloat();
         System.out.print("- Nhap chieu rong: ");
         float side2 = scanner.nextFloat();
+        scanner.close(); // Tối ưu hóa hiệu năng
 
         System.out.println("****************************");
 

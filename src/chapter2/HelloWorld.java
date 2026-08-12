@@ -12,6 +12,7 @@ public class HelloWorld {
 
 		System.out.print("Enter your age: ");
 		int age = scanner.nextInt();
+		scanner.close();
 
 		System.out.println("Thanks! Welcome...");
 		System.out.println("- Mr/Ms: " + name);
