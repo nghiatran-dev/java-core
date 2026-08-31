@@ -4,7 +4,7 @@ public class Student {
     String name;
     int age;
 
-    void learnJava() {
+    public void learnJava() {
         System.out.println("Learn Java");
     }
 }
